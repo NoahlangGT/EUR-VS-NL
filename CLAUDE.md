@@ -5,27 +5,39 @@
 2. Jüngste Befehle: `python3 /opt/heliotropica/abschnitt.py befehlsbuch neu 5`
 3. Erst dann die aufgabenrelevanten Abschnitte laden.
 
-## Wer
-Noah Lang. CEO The Optimizer S.L., 50 % Heliotropica S.L.
-Standort: La Pobla de Farnals, Valencia, Spanien.
-Sprache: immer Deutsch, echte Umlaute, kein Passiv, keine Floskeln, kein KI-Stil, keine Bullet Points, keine Gedankenstriche als Einschub.
-
 ## System
-Wir bauen OPTIMaiZEx (optimaizex.com) — mandantenfähiges XaaS, 8 Apps.
-Heliotropica (heliotropica.es) ist Mandant 1 und Reallabor.
+OPTIMaiZEx (optimaizex.com) — mandantenfähiges XaaS.
+Besteht aus: einer öffentlichen High-Targeted-Landingpage + 8 integrierten Apps.
+Mandant 1: Heliotropica (heliotropica.es). Mandant 2: Eurener (eurener.optimaizex.com).
 Umsatzziel: 1.000.000 EUR bis 31.01.2027.
 
 ## Dokumente (nur bei App- oder Seitenbezug)
-Index: `python3 /opt/heliotropica/abschnitt.py index`
-Grundbibel-Register: `python3 /opt/heliotropica/abschnitt.py grundbibel Register`
-Abschnitt: `python3 /opt/heliotropica/abschnitt.py <dok> <Nummer oder Anker>`
-Dokumente: grundbibel, rahmen, prompts, befehlsbuch, systemdefinition, systembasis, formeln/<datei>
+Abschnitt holen: `python3 /opt/heliotropica/abschnitt.py <dok> <Nummer oder Anker>`
+Ganzer Abschnitt ohne Kürzung: `--alles`
+
+| Dokument | Link | Kürzel |
+|---|---|---|
+| Index (alle Docs) | — | `abschnitt.py index` |
+| Rahmen | https://heliotropica.es/dashboard/dox/Rahmen | rahmen |
+| Grundbibel | https://heliotropica.es/dashboard/dox/Rahmen/0%20Grundbibel | grundbibel |
+| Systemdefinition | https://heliotropica.es/dashboard/dox/Rahmen/3%20Systemdefinition | systemdefinition |
+| Prompts | https://heliotropica.es/dashboard/dox/Rahmen | prompts |
+| Befehlsbuch | https://heliotropica.es/dashboard/dox/Rahmen | befehlsbuch |
+| Systembasis | https://heliotropica.es/dashboard/dox/Rahmen | systembasis |
+| Formeln | https://heliotropica.es/dashboard/dox/Rahmen | formeln/\<datei\> |
 
 ## Rangfolge
 Noahs jüngster Befehl > Rahmen > Befehlsbuch > Systemdefinition > Formelregister.
 Bestand nie ersetzen, nur weiterentwickeln (Rahmen 8.9, B70).
-Vor jedem Schreiben: `HT:sperre` — danach freigeben.
+Vor jedem Schreiben: `HT:sperre` setzen, danach freigeben.
 
-## Farben Heliotropica
-Navy #002B49, Gold #F4A900, Dunkelgold #8F6300, Hellblau #F4F8FC, Fehlerrot #B3261E.
-OPTIMaiZEx: Schwarz #0A0B0F, Orange #FE6303, Weiß.
+## Serverarchitektur
+
+| Ebene | Aufbau |
+|---|---|
+| Mother-Board | template.optimaizex.com. Web-Code genau einmal unter /var/www/mandanten/template: /ox/, alle App-Seiten, verbund, lib, Zeichen, Icons. |
+| Mandanten | Eigene Inhalte je unter /var/www/mandanten/\<kennung\>: Marke, Logos, Bilder, DOX, Kataloge, Listen, Texte. Eigene Datenbank, eigener Kern, eigenes Postfach, eigener Schlüssel. |
+| Synchronisation | nginx liefert zuerst aus Mandantenordner, sonst aus Mother-Board. Code einmal ändern — wirkt sofort bei allen. |
+| Server-Code | /opt/optimaizex/kern. Alle Kerne laufen live daraus in eigenen Sandkästen. /opt/heliotropica ist nur noch Verweis für alte Pfade. |
+| Single-Page-System | /ox/index.html ist das eine Dokument. Jede App ein Modul per import(), Router per pushState. Kein Neuladen beim Appwechsel. |
+| Bestand | Alte App-Seiten (/dashboard/, /xannel/ …) laufen weiter aus dem Mother-Board bis /ox/ sie ablöst (Plan Schritt 9). |
