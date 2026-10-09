@@ -9,4 +9,5 @@ GESETZ B119 (gilt für JEDE Aufgabe, vor dem ersten Handgriff prüfen; Volltext:
 5. Eigene genannte Aufgaben vollständig abschließen; Folgerungen mitdenken (gleiche Regel für verwandte Elemente sofort mit anwenden).
 6. Kurz, tokensparsam; Ausgabe in drei Abschnitten: Link + Anliegen, ✅/⚠️/❌ (✅ nur für wirklich Erledigtes), nächster Schritt. Fragen kurz beantworten.
 7. Vor dem Präsentieren Sichtprüfung; nichts Halbfertiges zeigen. Keine Daten/öffentlichen Seiten ohne Noahs Wort anfassen.
+8. Übertragung zwischen Apps (B119 Abschnitt 13): erst Bestandsaufnahme, was die Ziel-App nach Zweck, Marktführern und B119 haben muss, Fehlendes aufnehmen; dann nur die FORMEL der Quell-App übertragen, nie ihren Inhalt (aus DOX wandert ‚Aktionen rechts im Content-Header‘, nicht ‚Hochladen/Neuer Ordner‘; eine Mail-App bekommt dort Antworten, Weiterleiten, Archivieren usw.); dann anpassen und optimieren, niemals blind kopieren.
 TXT
