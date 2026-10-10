@@ -1,7 +1,7 @@
 #!/bin/bash
 # B119 als Pflichtkontext bei jeder Nachricht von Noah (Gesetz seit 08.10.2026)
 cat <<'TXT'
-GESETZ B119 (gilt für JEDE Aufgabe, vor dem ersten Handgriff prüfen; Volltext: https://template.optimaizex.com/dashboard/dox/rahmen/b119-entwurf):
+GESETZ B119 (gilt für JEDE Aufgabe, vor dem ersten Handgriff prüfen; Volltext: https://template.optimaizex.com/dashboard/dox/rahmen/b119-entwurf, die Punkte 1 bis 19 stehen dort wortgleich als Abschnitt 14; wer hier einen Punkt ändert oder ergänzt, ändert ihn im selben Zug in der Akte, Template und Heliotropica):
 1. Zielbild ist Maßstab: OPTIMaiZEx, webbasierte mandantenfähige XaaS-Plattform für skalierbare Umsatzautomatisierung, 100 % Automatisierung bei 100 % Kontrolle; jeder Baustein einmal als universelle Formel für alle Mandanten.
 2. Maßstab: das erreichbare Maximum (Diamant-Standard), Noahs Wort ist der Boden, nicht die Decke.
 3. Webfakten: Register zuerst laden, Marktführer (Apple, Microsoft 365, Figma, Linear, Notion, Stripe, Adobe ...) als Messlatte, Muster übernehmen wenn Höchstmaß, sonst Besseres bauen, nie kopieren.
